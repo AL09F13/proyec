@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+ <head> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+ 
+  <title>Mi aplicacion</title>
+
+  <!--grupo CSS-->
+  <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+  <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css" />
+  <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css" /> 
+  <link rel="stylesheet" href=
+ "css/cumpleanos.css" />
+        
+        
+
+
+  <!--grupo JavaScript-->
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+  <script src="js/acciones.js" type="text/javascript"></script>
+  <!-- <script src="phonegap.js" type="text/javascript"></script> -->
+ </head>
+
+ <body>
+ 
+ 
+ 
+ 
+ <!-- Principal -->
+ <div data-role="page" id="inicio" > 
+
+  
+  <div data-role="header" align="center">
+    <h1>!!CALCULADORA CUMPLEAÑERA!!</h1>
+  </div>
+
+  <div data-role="main" class="ui-content" align="center"> 
+    
+    <p> Esta aplicacion te ayudara a saber la cantidad de dias restantes para tu cumpleaños...!!! </p>
+    
+    
+    
+    
+    <br>
+    <br>
+    <br>
+    
+    <a href="#nombre" id="btn_comenzar" class="ui-btn" style="width:50%">COMENZAR...</a>   
+ 
+   <br>
+   <br>
+   <br>
+  
+  
+  <img src="imagenes CUMPLE/images.jpg" height="477" width="786"> 
+   
+   <br>
+   <br>
+   
+  </div>
+
+  <div data-role="footer" align="center" data-position="fixed">
+  
+   <h2> @LuisEduardo </h2>
+   <h2> @RaulManzano </h2>
+ 
+  </div>
+ </div>  
+ <!-- Principal -->
+
+
+
+ <!-- NOMBRE -->
+ 
+ <div data-role="page" id="nombre" > 
+ 
+  <div data-role="header" align="center">
+    <h1>¿Cual es tu nombre?!</h1>
+  </div>
+
+  <div data-role="main" class="ui-content" align="center"> 
+    
+    <br>
+    <br>
+    
+    <div style="width:35%">
+    
+     <input type="text" name="nom" id="txt_nom" align="absbottom" placeholder="Nombre:">
+    </div>
+ 
+  <br>
+  <br>
+     
+   <a href="#inicio" id="btn_regresa" data-icon="arrow-l" data-iconpos="left" class="ui-btn" style="width:30%">REGRESAR</a> 
+  
+   
+   <a href="#fecha" id="btn_conti" data-icon="arrow-l" data-iconpos="left" class="ui-btn" style="width:30%">CONTINUAR</a> 
+   
+  </div>
+ 
+   <div data-role="footer" align="center" data-position="fixed">
+  
+   <h2> @LuisEduardo </h2>
+   <h2> @RaulManzano </h2>
+   
+   </div>
+   
+  </div>
+ </div> 
+ 
+ <!-- NOMBRE --> 
+ 
+ 
+ 
+ 
+ <!-- FECHA -->
+ 
+ 
+ <div data-role="page" id="fecha" > 
+ 
+  <div data-role="header" align="center">
+    <h1>Fecha de nacimiento...</h1>
+  </div>
+  
+<div data-role="controlgroup" data-type="horizontal" align="center" style="clear:both">
+    
+     <div style="width:100px; float:left; padding:15px">
+    DIA
+    <input type="number" name="numero" placeholder="escribe dia" id="diacumple">
+    DD
+    </div>
+     
+     <div align="center" style="width:100px; float:left; padding:15px">
+     MES
+    <input type="number" name="numero" placeholder="escribe mes" id="mescumple">
+    MM
+      </div>
+    
+     <div align="center" style="width:80px; float:left; padding:15px">
+     AÑO
+    <input type="number" name="numero" placeholder="escribe año" id="yearcumple">
+    AAAA</div>
+   
+  
+   
+   <div data-role="controlgroup" data-type="horizontal" align="center" style="clear:both">
+   
+   <br>
+   <br>    
+   <br>
+   <br>
+   <br>
+   
+   <a  href="#nombre" id="atras" data-role="button" data-inline="true" data-icon="arrow-l" data-iconpos="left"> ATRAS </a>
+        	
+   <a  href="#felizidades" id="continu" data-role="button" data-inline="true" data-icon="arrow-r" data-iconpos="right"> CONTINUAR</a>	
+   
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   
+   </div>	
+        
+     
+        
+   </div>
+   
+ <div data-role="footer" align="center" data-position="fixed">
+  
+   <h2> @LuisEduardo </h2>
+   <h2> @RaulManzano </h2>
+   
+  </div>
+ </div>
+ 
+  <!-- FECHA -->
+  
+  
+  
+  <!-- FELIZIDADES -->
+ 
+ <div data-role="page" id="felizidades" > 
+ 
+  <div data-role="header" align="center" id="nomm">
+    <h1>Resultado</h1>
+    <h1>DIAS PARA CELEBRAR</h1>
+    
+    </div>
+
+  <div data-role="main" class="ui-content" align="center"> 
+   
+
+   <div id="name" align="center" class="final">
+ 
+ 
+   </div>
+  <div id="day" align="center" class="final">
+ 
+ 
+   </div>
+  <div id="bird" align="center" class="final">
+ 
+ 
+   </div>
+   
+  <div id="congra" align="center" hidden="true" class="final">
+FELICIDADES YA CASI ES TU CUMPLE
+   </div>
+  
+  <br>
+  <br>
+ 
+ <p> GRACIAS POR USAR LA APLICACION </p>
+ 
+ <br>
+ <br>
+ 
+  <div id="Medad" align="center" class="final">
+ 
+ 
+ </div>
+ 
+ 
+   <br>
+   <br>
+  
+  <img src="imagenes CUMPLE/ArPBF4PtdxgFqxDaDP3LTfx2M-GrBbgNCjE43KaU7aWr.jpg" height="371" width="648"> 
+ 
+  
+   <br>
+   <br>
+   <br>
+   <br>
+  
+  <a href="#inicio" id="btn_inicio" class="ui-btn" style="width:30%">INICIO</a> 
+ 
+   <br>
+   <br>
+   <br>
+ 
+  </div>
+ 
+ 
+  <div data-role="footer" align="center" data-position="fixed" >
+  
+   <h2> @LuisEduardo </h2> 
+   <h2> @RaulManzano </h2>
+   
+  
+  </div>
+ </div> 
+ 
+
+ </body>
+</html> 

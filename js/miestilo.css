@@ -1,0 +1,62 @@
+body
+{
+	background-color:#F90;#F90
+}
+
+h1
+{
+	text-align:center;
+	font:"Comic Sans MS", cursive;
+	color:#666;
+	text-shadow: 10px 10px 10px #6FC;
+	letter-spacing:40px;
+	font-size:45px;
+}
+
+h2
+{
+	text-align:center;
+	font:"Comic Sans MS", cursive;
+	color:#F00;
+	text-shadow: 10px 10px 10px #6FC;
+	letter-spacing:30px;
+	font-size:35px;
+}
+	
+
+p
+{
+	text-align:justify;
+	font-size:20px;
+}
+
+#lado
+{
+	float:left;
+	background-image:url(../power_point_animales_0002.jpg);
+	height:3300px;
+	width:20;
+}
+
+#lado2
+{
+	float:right;
+	background-image:url(../power_point_animales_0002.jpg);
+	height:3300px;
+	width:20;
+	
+}
+
+#todo
+{
+	float:inherit;
+}
+
+
+
+a:link 
+ {color:#F00; text-decoration:none;}
+a:visited 
+ {color:#f00; text-decoration:none;}
+a:hover 
+  {color:#0CF; text-decoration:underline;}
